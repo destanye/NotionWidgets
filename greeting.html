@@ -33,7 +33,7 @@
 
            
         .greet{
-            font-size: 2em;
+            font-size: 3em;
             font-family: Georgia, "Times New Roman", Times, serif;
         }
 
@@ -91,9 +91,9 @@
 
 <script>
 
-function dispalyGreetings(today){
+function displayGreetings(today){
         hrs = today.getHours();
-        name="Destanye"
+        name=""
         if (hrs < 12)
             greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
@@ -104,7 +104,7 @@ function dispalyGreetings(today){
 
     }
 
-    function dispalyDate(today) {  
+    function displayDate(today) {  
        
         const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
         const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -120,7 +120,7 @@ function dispalyGreetings(today){
     }
 
 
-    function dispalyClock(today) {
+    function displayClock(today) {
 
         var hour = padZeros(twelveHour(today.getHours()));
         var minutes = padZeros(today.getMinutes());
@@ -152,15 +152,15 @@ function dispalyGreetings(today){
         return num;
     }
 
-    function dispalyWidget() {
+    function displayWidget() {
         var today = new Date();
-        dispalyGreetings(today);
-        dispalyDate(today);
-        dispalyClock(today);
-        setTimeout(dispalyWidget, 500);
+        displayGreetings(today);
+        displayDate(today);
+        displayClock(today);
+        setTimeout(displayWidget, 500);
     }
 
-    dispalyWidget()
+    displayWidget()
 
 </script>
 
