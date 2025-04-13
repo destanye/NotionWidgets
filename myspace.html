@@ -22,12 +22,17 @@
     }
 
     .notif-title {
-      background-color: #3366cc;
-      color: white;
-      font-weight: bold;
-      padding: 5px;
-      margin: -10px -10px 10px -10px;
-      font-size: 13px;
+  background-color: #3366cc;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  margin: -10px -10px 10px -10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* spacing between icon and text */
+}
+
     }
 
     .notif-item {
@@ -60,8 +65,10 @@
 <body>
 
 <div class="notif-box">
-  <div class="notif-title">My Mail </div>
-  <img src="assets/onlinenow.gif" class="icon" style="vertical-align: middle; margin-right: 5px; width: 16px; height: auto;">
+  <div class="notif-title">
+  <img src="assets/onlinenow.gif" class="icon" style="width: 16px; height: auto;">
+  My Mail
+</div>
 
   <div class="notif-item">
     <img src="assets/art.png" class="icon" style="vertical-align: middle; margin-right: 5px; width: 16px; height: auto;">
